@@ -131,7 +131,7 @@ module "ecs_cluster" {
   component = "cmp"
   deployment_identifier = "dev"
   
-  cluster_name = "iyo-ecs"
+  cluster_name = var.ecs_cluster_name
   cluster_instance_ssh_public_key_path = "~/.ssh/id_rsa.pub"
   cluster_instance_type = var.instance_type
   

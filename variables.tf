@@ -17,10 +17,10 @@
 #   default = "us-east-1b"
 # }
 
-# variable "ecs_cluster_name" {
-#   description = "The name of the Amazon ECS cluster."
-#   default = "jenkins"
-# }
+variable "ecs_cluster_name" {
+  description = "The name of the Amazon ECS cluster."
+  default = "iyo-cluster"
+}
 
 # variable "amis" {
 #   description = "Which AMI to spawn. Defaults to the AWS ECS optimized images."
