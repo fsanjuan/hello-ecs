@@ -133,9 +133,9 @@ module "ecs_cluster" {
   
   cluster_name = "iyo-ecs"
   cluster_instance_ssh_public_key_path = "~/.ssh/id_rsa.pub"
-  cluster_instance_type = "t2.small"
+  cluster_instance_type = var.instance_type
   
-  cluster_minimum_size = 2
-  cluster_maximum_size = 10
-  cluster_desired_capacity = 4
+  cluster_minimum_size = var.min_instance_size
+  cluster_maximum_size = var.max_instance_size
+  cluster_desired_capacity = var.desired_instance_capacity
 }
