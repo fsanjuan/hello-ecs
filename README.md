@@ -8,7 +8,7 @@ Creates:
 
 Steps:
 
-````
+```
 terraform init
 terraform plan
 terraform apply
